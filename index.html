@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Leumpang Club</title>
+  <link rel="icon" href="./assets/logo/opaque/logo_only_32.png" sizes="32x32" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <!-- Topbar -->
+    <div class="container flex items-center" style="gap: 1rem; height: 70px;">
+      <a href="./index.html"><img src="./assets/logo/transparent/logo_only.png" style="width: 64px; height: auto;"></a>
+      <p class="condensed" style="font-size: 1.5rem;">Leumpang Club</p>
+    </div>
+    <!-- Navbar -->
+    <div class="container flex" style="gap: 2rem;">
+      <nav id="navbar-top" class="navbar">
+        <ul style="gap: 2rem; padding: 1.5rem;">
+          <li><a class="nav-active" href="./index.html">Home</a></li>
+          <li><a href="./profile.html">Profile</a></li>
+          <li><a href="./visi-misi.html">Visi dan Misi</a></li>
+          <li><a href="./produk.html">Produk Kami</a></li>
+          <li><a href="./kontak.html">Kontak Kami</a></li>
+          <li><a href="./tentang.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div style="background-color: var(--accent-black);">
+      <div class="container">
+        <p style="color: white; text-align: center; font-weight: 500;">WEBSITE RESMI LEUMPANG CLUB est. 1999</p>
+      </div>
+    </div>
+  </header>
+  <script src="./js/script.js"></script>
+  <main>
+    <!-- HERO -->
+    <div class="container relative">
+      <div class="flex">
+        <div style="width: 50%;">
+          <img class="img-fluid" src="./assets/scooter-left.png" alt="">
+        </div>
+        <div class="absolute" style="bottom: 10%; left: 50%; transform: translateX(-50%);"" >
+          <img src=" ./assets/logo/transparent/logo_full.png" style="width: 150px; height: auto;">
+        </div>
+        <div style="width: 50%;">
+          <img class="img-fluid" src="./assets/scooter-right.png" alt="">
+        </div>
+      </div>
+    </div>
+    <hr style="height: 1px; background-color: #ffffff07;">
+    <!-- SIDBAR NAV + CONTENT -->
+    <div class="container relative" style="margin-top: 2rem;">
+      <div class="flex" style="gap: 3rem">
+        <!-- SIDEBAR NAV -->
+        <style>
+          aside:has(nav) {
+            width: 20%;
+            min-width: 100px;
+          }
+
+          aside>nav {
+            border-radius: 5px;
+            padding: 1.5rem;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+          }
+        </style>
+        <aside>
+          <nav class="navbar sticky" style="top: 100px;">
+            <ul class="flex-col" style="gap: 2rem;">
+              <li><a href="./artikel.html">Artikel</a></li>
+              <li><a href="./event.html">Event</a></li>
+              <li><a href="./galeri.html">Galeri Foto</a></li>
+              <li><a href="./client-kami.html">Client Kami</a></li>
+              <li><span style="padding: 0.75rem 1rem; font-weight: 500;">Login</span>
+                <nav class="navbar">
+                  <ul class="flex-col" style="gap: 2rem; margin-inline-start: 2rem; margin-top: 2rem;">
+                    <li><a href="./sign-in.html">Sign In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <!-- CONTENT -->
+        <div style="width: 70%;">
+          <article>
+            <h2 class="tight" style="font-size: 1.5rem;">Welcome</h2>
+            <p>Selamat datang di Leumpang Club, pangkalan kebersamaan pecinta motor di tengah kota Bandung! Terima kasih
+              telah mengunjungi situs resmi kami. Leumpang Club bukan sekadar komunitas penggemar motor, melainkan
+              sebuah wadah bagi para penyuka kebebasan dan petualangan di atas roda. Di sini, kami tidak hanya merayakan
+              kelincahan dan kecepatan motor, tetapi juga membangun persaudaraan yang kokoh dan dedikasi terhadap
+              semangat berkendara.</p>
+
+            <p>Bergabunglah dengan kami melalui halaman ini untuk merasakan sensasi kebersamaan di setiap tikungan
+              jalan. Jelajahi cerita perjalanan, acara seru, dan berbagai kegiatan menarik yang kami adakan. Saksikan
+              bagaimana Leumpang Club menjadi lebih dari sekadar komunitas motor, tetapi sebuah keluarga yang saling
+              mendukung, berbagi cerita, dan merayakan kehidupan di atas dua roda.</p>
+
+            <p>Terus pantau website ini untuk update terbaru, galeri foto seru, dan informasi seputar kegiatan klub.
+              Bergabunglah dalam perjalanan kami, dan bersama-sama kita akan merayakan kebebasan, persaudaraan, dan
+              getaran adrenalin di setiap perjalanan Leumpang Club. Terima kasih atas kunjungan Anda, dan selamat
+              mengeksplorasi! </p>
+          </article>
+          <img src="./assets/harley.png" style="float: right; max-width: 500px; height: auto; margin-block: 5rem;">
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div style="background-color: var(--accent-black);">
+      <div class="container">
+        <p style="color: white; text-align: center; font-weight: 500;">Hak Cipta &copy; Asrofil Fachrul Riidlo</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

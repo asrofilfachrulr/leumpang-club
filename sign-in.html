@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In | Leumpang CLub</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    .card {
+      max-width: 350px;
+    }
+
+    .card:has(form) {
+      margin-top: 250px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    form input {
+      display: block;
+    }
+
+    form input:not(input[type="submit"]) {
+      width: 100%;
+      height: 2.25rem;
+      margin-bottom: 2rem;
+      border: 3px solid var(--accent-black);
+      border-radius: 5px;
+      font-size: 1.2rem;
+      text-indent: 1rem;
+    }
+
+    form input[type="submit"] {
+      font-weight: 600 !important;
+      background-color: var(--accent-black);
+      color: white;
+      padding: 1rem 0.75rem;
+      border-radius: 5px;
+      margin-top: 2rem;
+      margin-inline: auto;
+      cursor: pointer;
+    }
+
+    #text-error {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div>
+      <div class="card" style="margin-inline: auto; width: 100%; padding: 2rem;">
+        <div class="flex flex-col items-center" style="gap: 1rem; margin-bottom: 2rem;">
+          <img src="./assets/logo/transparent/logo_only.png" alt="" style="width: 64px; height: auto;">
+          <p style="font-weight: 600;">Masuk ke Leumpang Club</p>
+        </div>
+        <form action="#" method="POST" id="login-form">
+          <label for="uname">Username</label>
+          <input type="text" id="uname" name="uname" required>
+          <label for="pw">Password</label>
+          <input type="password" name="pw" id="pw" required>
+          <a href="./sign-up.html" style="color: var(--accent-black); display: block;">Daftar Akun</a>
+          <input id="btn-login" type="submit" value="Masuk">
+          <p id="text-error" style="color: rgb(146, 16, 16); text-align: center; margin-top: 1rem;">Pasangan Kata Sandi dan Username Tidak Sesuai</p>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script>
+    const btnLogin = document.getElementById('btn-login')
+    const formLogin = document.getElementById('login-form')
+
+    btnLogin.addEventListener('click', async (e) => {
+      // handle login
+      e.preventDefault()
+
+      const response = await fetch('https://dummyjson.com/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          username: formLogin.elements["uname"].value,
+          password: formLogin.elements["pw"].value
+        })
+      })
+
+      const jsonData = await response.json()
+      console.log(jsonData)
+      if (jsonData.message == "Invalid credentials") {
+        document.getElementById("text-error").style.display = "block"
+      } else if(jsonData.hasOwnProperty('token')){
+        window.location.href = "http://" + window.location.host
+      }
+
+    })
+  </script>
+</body>
+
+</html>

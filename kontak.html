@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Leumpang Club</title>
+  <link rel="icon" href="./assets/logo/opaque/logo_only_32.png" sizes="32x32" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <!-- Topbar -->
+    <div class="container flex items-center" style="gap: 1rem; height: 70px;">
+      <a href="./index.html"><img src="./assets/logo/transparent/logo_only.png" style="width: 64px; height: auto;"></a>
+      <p class="condensed" style="font-size: 1.5rem;">Leumpang Club</p>
+    </div>
+    <!-- Navbar -->
+    <div class="container flex" style="gap: 2rem;">
+      <nav id="navbar-top" class="navbar">
+        <ul style="gap: 2rem; padding: 1.5rem;">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./profile.html">Profile</a></li>
+          <li><a href="./visi-misi.html">Visi dan Misi</a></li>
+          <li><a href="./produk.html">Produk Kami</a></li>
+          <li><a class="nav-active" href="./kontak.html">Kontak Kami</a></li>
+          <li><a href="./tentang.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div style="background-color: var(--accent-black);">
+      <div class="container">
+        <p style="color: white; text-align: center; font-weight: 500;">WEBSITE RESMI LEUMPANG CLUB est. 1999</p>
+      </div>
+    </div>
+  </header>
+  <script src="./js/script.js"></script>
+  <main>
+    <!-- SIDBAR NAV + CONTENT -->
+    <div class="container relative" style="margin-top: 2rem;">
+      <div class="flex" style="gap: 3rem">
+        <!-- SIDEBAR NAV -->
+        <style>
+          aside:has(nav) {
+            width: 20%;
+            min-width: 100px;
+          }
+
+          aside>nav {
+            border-radius: 5px;
+            padding: 1.5rem;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+          }
+        </style>
+        <aside>
+          <nav class="navbar sticky" style="top: 100px;">
+            <ul class="flex-col" style="gap: 2rem;">
+              <li><a href="./artikel.html">Artikel</a></li>
+              <li><a href="./event.html">Event</a></li>
+              <li><a href="./galeri.html">Galeri Foto</a></li>
+              <li><a href="./client-kami.html">Client Kami</a></li>
+              <li><span style="padding: 0.75rem 1rem; font-weight: 500;">Login</span>
+                <nav class="navbar">
+                  <ul class="flex-col" style="gap: 2rem; margin-inline-start: 2rem; margin-top: 2rem;">
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <!-- CONTENT -->
+        <div style="width: 70%; min-height: 650px;">
+          <article>
+            <h2 class="tight" style="font-size: 1.5rem;">Kontak Kami</h2>
+            <style>
+              table {
+                border-collapse: collapse;
+              }
+
+              td,
+              th {
+                padding: 1rem 2rem;
+                border: 1px solid #b8b8b857;
+              }
+
+              th {
+                background-color: #f0f0f0;
+              }
+
+              table a {
+                color: inherit;
+              }
+            </style>
+
+            <table style="margin-top: 3rem;">
+              <tr>
+                <th>Email</th>
+                <td><a href="mailto:admin@leumpang.id" target="_blank">admin@leumpang.id</a></td>
+              </tr>
+              <tr>
+                <th>No Telp</th>
+                <td><a href="tel:021987123887" target="_blank">(021) 9871 23887</a></td>
+              </tr>
+              <tr>
+                <th>WhatsApp</th>
+                <td><a href="wa.me/6282227950210">(+62 822) 2795 0210</a></td>
+              </tr>
+              <tr>
+                <th>Lokasi Sekretariat</th>
+                <td> No, Jl. Aceh No.51, 40117, Babakan Ciamis, Kec. Sumur Bandung, Kota Bandung, Jawa Barat 40117 
+                  <span style="font-size: 0.85rem;">
+                    <a href="https://maps.app.goo.gl/HNVH6hFsmNJ1w6h68" target="_blank" style="color: rgb(148, 22, 22); text-decoration: none;">[<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg> Maps]</a>
+                  </span></td>
+              </tr>
+              <tr>
+                <th>Waktu Layanan</th>
+                <td>
+                  <p>Media Online  : 08:00 - 19:00</p>
+                  <p>Onsite Sekre. : 09:00 - 16:00</p>
+                </td>
+              </tr>
+              <tr>
+                <th>Media Sosial</th>
+                <td style="padding: 0;">
+                  <table style="width: 100%;">
+                    <tr>
+                      <td width="30%">Instagram</td>
+                      <td><a href="https://instagram.com" target="_blank">@leumpang.id</a></td>
+                    </tr>
+                    <tr>
+                      <td>Twitter</td>
+                      <td><a href="https://x.com" target="_blank">@leumpang.bdg.id</a></td>
+                    </tr>
+                    <tr>
+                      <td>TikTok</td>
+                      <td><a href="https://tiktok.com" target="_blank">@leumpang.id</a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div style="background-color: var(--accent-black);">
+      <div class="container">
+        <p style="color: white; text-align: center; font-weight: 500;">Hak Cipta &copy; Asrofil Fachrul Riidlo</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

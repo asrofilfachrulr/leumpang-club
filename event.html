@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event - Leumpang Club</title>
+  <link rel="icon" href="./assets/logo/opaque/logo_only_32.png" sizes="32x32" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <!-- Topbar -->
+    <div class="container flex items-center" style="gap: 1rem; height: 70px;">
+      <a href="./index.html"><img src="./assets/logo/transparent/logo_only.png" style="width: 64px; height: auto;"></a>
+      <p class="condensed" style="font-size: 1.5rem;">Leumpang Club</p>
+    </div>
+    <!-- Navbar -->
+    <div class="container flex" style="gap: 2rem;">
+      <nav id="navbar-top" class="navbar">
+        <ul style="gap: 2rem; padding: 1.5rem;">
+          <li><a  href="./index.html">Home</a></li>
+          <li><a href="./profile.html">Profile</a></li>
+          <li><a href="./visi-misi.html">Visi dan Misi</a></li>
+          <li><a href="./produk.html">Produk Kami</a></li>
+          <li><a href="./kontak.html">Kontak Kami</a></li>
+          <li><a href="./tentang.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div style="background-color: var(--accent-black);">
+      <div class="container">
+        <p style="color: white; text-align: center; font-weight: 500;">WEBSITE RESMI LEUMPANG CLUB est. 1999</p>
+      </div>
+    </div>
+  </header>
+  <script src="./js/script.js"></script>
+  <main>
+    <!-- SIDBAR NAV + CONTENT -->
+    <div class="container relative" style="margin-top: 2rem;">
+      <div class="flex" style="gap: 3rem">
+        <!-- SIDEBAR NAV -->
+        <style>
+          aside:has(nav) {
+            width: 20%;
+            min-width: 100px;
+          }
+
+          aside>nav {
+            border-radius: 5px;
+            padding: 1.5rem;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+          }
+        </style>
+        <aside>
+          <nav class="navbar sticky" style="top: 100px;">
+            <ul class="flex-col" style="gap: 2rem;">
+              <li><a href="./artikel.html">Artikel</a></li>
+              <li><a class="nav-active" href="./event.html">Event</a></li>
+              <li><a href="./galeri.html">Galeri Foto</a></li>
+              <li><a href="./client-kami.html">Client Kami</a></li>
+              <li><span style="padding: 0.75rem 1rem; font-weight: 500;">Login</span>
+                <nav class="navbar">
+                  <ul class="flex-col" style="gap: 2rem; margin-inline-start: 2rem; margin-top: 2rem;">
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <!-- CONTENT -->
+        <div style="width: 70%;">
+          <article>
+            <h2 class="tight" style="font-size: 1.5rem;">Event</h2>
+            <h3 class="condensed" style="font-size: 1.25rem; margin-top: 3rem; ">Akan Datang</h3>
+            <div class="flex flex-wrap" style="margin-top: 1rem; gap: 2rem">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./assets/event/e1.jpg">
+                </div>
+                <div class="card-body">
+                  <div class="top">
+                    <h3 class="condensed">Annual Gathering</h3>
+                    <p style="font-size: 0.85rem; font-weight: 500;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>&nbsp;Gedung Sate</p>
+                    <p style="font-size: 0.85rem; font-weight: 500;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-calendar3" viewBox="0 0 16 16">
+                      <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
+                      <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                    </svg>&nbsp;&nbsp;2 Februari 2024, 09:30 WIB</p>
+                  </div>
+                  <div class="bottom"><button>Detail</button></div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <img src="./assets/event/e2.jpg">
+                </div>
+                <div class="card-body">
+                  <div class="top">
+                    <h3 class="condensed">Bandung Rider Cup</h3>
+                    <p style="font-size: 0.85rem; font-weight: 500;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>&nbsp;Trek Motor Cileunyi</p>
+                    <p style="font-size: 0.85rem; font-weight: 500;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-calendar3" viewBox="0 0 16 16">
+                      <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
+                      <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                    </svg>&nbsp;&nbsp;7 Februari 2024, 15:30 WIB</p>
+                  </div>
+                  <div class="bottom"><button>Detail</button></div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <img src="./assets/event/e3.jpeg">
+                </div>
+                <div class="card-body">
+                  <div class="top">
+                    <h3 class="condensed">Labor Day Charity</h3>
+                    <p style="font-size: 0.85rem; font-weight: 500;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>&nbsp;Wilayah Terdampak Banjir Bandung Selatan</p>
+                    <p style="font-size: 0.85rem; font-weight: 500;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-calendar3" viewBox="0 0 16 16">
+                      <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
+                      <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                    </svg>&nbsp;&nbsp;12 Maret 2024, 09:00 WIB, start bareng Gedung Sate</p>
+                  </div>
+                  <div class="bottom"><button>Detail</button></div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <img src="./assets/event/e4.jpg">
+                </div>
+                <div class="card-body">
+                  <div class="top">
+                    <h3 class="condensed">Ride Day: Goes to Jogja (PP)</h3>
+                    <p style="font-size: 0.85rem; font-weight: 500;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>&nbsp;Start BEC</p>
+                    <p style="font-size: 0.85rem; font-weight: 500;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-calendar3" viewBox="0 0 16 16">
+                      <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
+                      <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                    </svg>&nbsp;&nbsp;21-23 Maret 2024, start 09:30 WIB</p>
+                  </div>
+                  <div class="bottom"><button>Detail</button></div>
+                </div>
+              </div>        
+            </div>
+            <h3 class="condensed" style="font-size: 1.25rem; margin-top: 3rem; ">Telah Berlalu</h3>
+            
+            <div class="flex flex-wrap" style="gap: 2rem; margin-block: 2rem;">
+              <div class="card relative">
+                <div class="overlay-dim"></div>
+                <div class="card-header">
+                  <img src="./assets/event/e5.jpg">
+                </div>
+                <div class="card-body">
+                  <div class="top">
+                    <h3 class="condensed">Weekend Street Workshop</h3>
+                    <p style="font-size: 0.85rem; font-weight: 500;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>&nbsp;Braga</p>
+                    <p style="font-size: 0.85rem; font-weight: 500;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-calendar3" viewBox="0 0 16 16">
+                      <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/>
+                      <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                    </svg>&nbsp;&nbsp;7 Januari 2024, 09:30 WIB</p>
+                  </div>
+                  <div class="bottom"><button>Detail</button></div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div style="background-color: var(--accent-black);">
+      <div class="container">
+        <p style="color: white; text-align: center; font-weight: 500;">Hak Cipta &copy; Asrofil Fachrul Riidlo</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk dan Jasa - Leumpang Club</title>
+  <link rel="icon" href="./assets/logo/opaque/logo_only_32.png" sizes="32x32" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <!-- Topbar -->
+    <div class="container flex items-center" style="gap: 1rem; height: 70px;">
+      <a href="./index.html"><img src="./assets/logo/transparent/logo_only.png" style="width: 64px; height: auto;"></a>
+      <p class="condensed" style="font-size: 1.5rem;">Leumpang Club</p>
+    </div>
+    <!-- Navbar -->
+    <div class="container flex" style="gap: 2rem;">
+      <nav id="navbar-top" class="navbar">
+        <ul style="gap: 2rem; padding: 1.5rem;">
+          <li><a  href="./index.html">Home</a></li>
+          <li><a href="./profile.html">Profile</a></li>
+          <li><a href="./visi-misi.html">Visi dan Misi</a></li>
+          <li><a class="nav-active" href="./produk.html">Produk Kami</a></li>
+          <li><a href="./kontak.html">Kontak Kami</a></li>
+          <li><a href="./tentang.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div style="background-color: var(--accent-black);">
+      <div class="container">
+        <p style="color: white; text-align: center; font-weight: 500;">WEBSITE RESMI LEUMPANG CLUB est. 1999</p>
+      </div>
+    </div>
+  </header>
+  <script src="./js/script.js"></script>
+  <main>
+    <!-- SIDBAR NAV + CONTENT -->
+    <div class="container relative" style="margin-top: 2rem;">
+      <div class="flex" style="gap: 3rem">
+        <!-- SIDEBAR NAV -->
+        <style>
+          aside:has(nav) {
+            width: 20%;
+            min-width: 100px;
+          }
+
+          aside>nav {
+            border-radius: 5px;
+            padding: 1.5rem;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+          }
+        </style>
+        <aside>
+          <nav class="navbar sticky" style="top: 100px;">
+            <ul class="flex-col" style="gap: 2rem;">
+              <li><a href="./artikel.html">Artikel</a></li>
+              <li><a href="./event.html">Event</a></li>
+              <li><a href="./galeri.html">Galeri Foto</a></li>
+              <li><a href="./client-kami.html">Client Kami</a></li>
+              <li><span style="padding: 0.75rem 1rem; font-weight: 500;">Login</span>
+                <nav class="navbar">
+                  <ul class="flex-col" style="gap: 2rem; margin-inline-start: 2rem; margin-top: 2rem;">
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <!-- CONTENT -->
+        <div style="width: 70%;">
+          <article>
+            <h2 class="tight" style="font-size: 1.5rem;">Produk Kami</h2>
+
+            <h3 class="condensed" style="font-size: 1.5rem; margin-top: 3rem;">Produk</h3>
+
+            <style>
+              .list-products {
+                gap: 1rem;
+              }
+              
+              .list-products > div {
+                margin-top: 1rem;
+              }
+
+              .list-products img {
+                width: auto;
+                height: 100%;
+                max-height: 100px;
+                object-fit: cover;
+                border-radius: 5px;
+              }
+              .list-products p {
+                font-size: 0.85rem;
+                font-weight: 500;
+              }
+            </style>
+
+            <h4 class="condensed" style="font-size: 1.1rem; margin-top: 1rem;">Merchandise</h4>
+
+            <div class="flex flex-wrap list-products">
+              <div class="flex flex-col items-center">
+                <img src="./assets/product/m1.jpg">
+                <p>Kaos</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./assets/product/m2.jpg">
+                <p>Sticker</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./assets/product/m3.jpg">
+                <p>Jaket</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./assets/product/m4.jpg">
+                <p>Topi</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./assets/product/m5.jpg">
+                <p>Gantungan Kunci</p>
+              </div>
+            </div>
+
+            <h4 class="condensed" style="font-size: 1.1rem; margin-top: 2rem;">Jual Beli Spare Part</h4>
+
+            <div class="flex flex-wrap list-products">
+              <div class="flex flex-col items-center">
+                <img src="./assets/product/sp1.jpg">
+                <p>Aki</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./assets/product/sp2.jpg">
+                <p>Cakram</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./assets/product/sp3.webp">
+                <p>Ban</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./assets/product/sp4.jpg">
+                <p>Velg</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./assets/product/sp5.jpg">
+                <p>Lampu</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./assets/product/sp6.jpg">
+                <p>Aksesoris</p>
+              </div>
+            </div>
+
+            <h4 class="condensed" style="font-size: 1.1rem; margin-top: 2rem;">Jasa Reparasi dan Perawatan</h4>
+
+            <div class="flex flex-wrap list-products">
+              <div class="flex flex-col items-center">
+                <img src="./assets/product/r1.jpeg">
+                <p>Bengkel Motor</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./assets/product/r2.jpg">
+                <p>Bengkel Mobil</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./assets/product/r3.jpg">
+                <p>Bengkel Panggilan</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./assets/product/r4.jpg">
+                <p>Konsultasi Online</p>
+              </div>
+            </div>
+
+            <h4 class="condensed" style="font-size: 1.1rem; margin-top: 2rem;">Lain-Lain</h4>
+
+            <div class="flex flex-wrap list-products">
+              <div class="flex flex-col items-center">
+                <img src="./assets/product/l1.jpg">
+                <p>Kepanitiaan Acara</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./assets/product/l2.jpg">
+                <p>Training Korporasi atau Sekolah</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./assets/product/l3.png">
+                <p>Aksi Sosial</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <img src="./assets/product/l.jpeg">
+                <p>Konvoi Pengamanan</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div style="background-color: var(--accent-black);">
+      <div class="container">
+        <p style="color: white; text-align: center; font-weight: 500;">Hak Cipta &copy; Asrofil Fachrul Riidlo</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

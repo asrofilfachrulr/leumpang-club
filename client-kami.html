@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klien Kami - Leumpang Club</title>
+  <link rel="icon" href="./assets/logo/opaque/logo_only_32.png" sizes="32x32" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <!-- Topbar -->
+    <div class="container flex items-center" style="gap: 1rem; height: 70px;">
+      <a href="./index.html"><img src="./assets/logo/transparent/logo_only.png" style="width: 64px; height: auto;"></a>
+      <p class="condensed" style="font-size: 1.5rem;">Leumpang Club</p>
+    </div>
+    <!-- Navbar -->
+    <div class="container flex" style="gap: 2rem;">
+      <nav id="navbar-top" class="navbar">
+        <ul style="gap: 2rem; padding: 1.5rem;">
+          <li><a  href="./index.html">Home</a></li>
+          <li><a href="./profile.html">Profile</a></li>
+          <li><a href="./visi-misi.html">Visi dan Misi</a></li>
+          <li><a href="./produk.html">Produk Kami</a></li>
+          <li><a href="./kontak.html">Kontak Kami</a></li>
+          <li><a href="./tentang.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div style="background-color: var(--accent-black);">
+      <div class="container">
+        <p style="color: white; text-align: center; font-weight: 500;">WEBSITE RESMI LEUMPANG CLUB est. 1999</p>
+      </div>
+    </div>
+  </header>
+  <script src="./js/script.js"></script>
+  <main>
+    <!-- SIDBAR NAV + CONTENT -->
+    <div class="container relative" style="margin-top: 2rem;">
+      <div class="flex" style="gap: 3rem">
+        <!-- SIDEBAR NAV -->
+        <style>
+          aside:has(nav) {
+            width: 20%;
+            min-width: 100px;
+          }
+
+          aside>nav {
+            border-radius: 5px;
+            padding: 1.5rem;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+          }
+        </style>
+        <aside>
+          <nav class="navbar sticky" style="top: 100px;">
+            <ul class="flex-col" style="gap: 2rem;">
+              <li><a href="./artikel.html">Artikel</a></li>
+              <li><a href="./event.html">Event</a></li>
+              <li><a href="./galeri.html">Galeri Foto</a></li>
+              <li><a class="nav-active" href="./client-kami.html">Client Kami</a></li>
+              <li><span style="padding: 0.75rem 1rem; font-weight: 500;">Login</span>
+                <nav class="navbar">
+                  <ul class="flex-col" style="gap: 2rem; margin-inline-start: 2rem; margin-top: 2rem;">
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <!-- CONTENT -->
+        <div style="width: 70%;">
+          <article>
+            <h2 class="tight" style="font-size: 1.5rem;">Klien Kami</h2>
+            <style>
+              #client-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                column-gap: 2rem;
+                row-gap: 3rem;
+                margin-top: 3rem;
+                margin-block: 3rem;
+              }
+
+              #client-grid img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+              }
+            </style>
+            <div id="client-grid">
+              <img src="./assets/client/ahm.jpg">
+              <img src="./assets/client/kemenhub.jpg">
+              <img src="./assets/client/pertamina.jpg">
+              <img src="./assets/client/polri.png">
+              <img src="./assets/client/yamaha.jpg">
+              <img src="./assets/client/bnpb.png">
+              <img src="./assets/client/jabarprov.jpg">
+              <img src="./assets/client/pemkotbdg.png">
+              <img src="./assets/client/pemkotcirebon.png">
+              <img src="./assets/client/pemkotgarut.png">
+              <img src="./assets/client/pemkottasik.png">
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div style="background-color: var(--accent-black);">
+      <div class="container">
+        <p style="color: white; text-align: center; font-weight: 500;">Hak Cipta &copy; Asrofil Fachrul Riidlo</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
